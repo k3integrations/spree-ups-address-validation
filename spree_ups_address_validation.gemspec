@@ -2,7 +2,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_ups_address_validation'
-  s.version     = '3.1.2'
+  s.version     = '3.1.3'
   s.summary     = 'Validate your spree shipping addresses'
   s.description = 'Validate your spree shipping addresses'
   s.required_ruby_version = '>= 1.9.3'
