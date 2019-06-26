@@ -26,7 +26,7 @@ module Spree
 
     def is_us_50?
       # return true if it's one of the US 50 states. otherwise, UPS Address Validation won't cover it
-      state.country.iso3 == "USA" && @@us_50_states.include?(state.abbr)
+      state.present? && state.country.present? && state.country.iso3 == "USA" && @@us_50_states.include?(state.abbr)
     end
 
     private
